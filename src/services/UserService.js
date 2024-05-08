@@ -11,7 +11,17 @@ class UserService {
 		return User.create({ lastName, firstName, email });
 	}
 
-	// Autres méthodes de service pour créer, mettre à jour et supprimer des utilisateurs
+	static async updateUser(userId, userData) {
+		const user = await User.findByPk(userId);
+
+		if (!user) {
+			throw new Error('User not found');
+		}
+
+		await user.update(userData);
+
+		return user;
+	}
 }
 
 module.exports = UserService;

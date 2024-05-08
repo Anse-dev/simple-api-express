@@ -41,7 +41,23 @@ class UserController {
 		}
 	}
 
-	// Autres méthodes de contrôleur pour créer, mettre à jour et supprimer des utilisateurs
+	static async updateUser(req, res) {
+		try {
+			const userId = req.params.userId;
+			const { lastName, firstName, email } = req.body;
+
+			const updatedUser = await UserService.updateUser(userId, {
+				lastName,
+				firstName,
+				email,
+			});
+
+			console.log(updatedUser);
+			res.status(201).json(updatedUser);
+		} catch (err) {
+			res.status(500).json({ error: err.message });
+		}
+	}
 }
 
 module.exports = UserController;
