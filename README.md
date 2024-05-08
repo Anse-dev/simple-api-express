@@ -33,7 +33,7 @@ Le projet vise à fournir un exemple d'API construite avec Express.js et Sequeli
 PORT=3000
 DB_HOST=localhost
 DB_USERNAME=root
-DB_PASSWORD=anselme
+DB_PASSWORD=
 DB_NAME=api
 ```
 
