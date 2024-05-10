@@ -9,6 +9,7 @@ module.exports = {
 				primaryKey: true,
 				type: Sequelize.INTEGER,
 			},
+
 			firstName: {
 				type: Sequelize.STRING,
 				allowNull: false,
@@ -19,11 +20,28 @@ module.exports = {
 			},
 			email: {
 				type: Sequelize.STRING,
-				unique: true,
+
 				validate: {
 					isEmail: true,
 				},
+				unique: true,
 			},
+			role: {
+				type: Sequelize.ENUM('user', 'owner', 'admin'),
+				defaultValue: 'user',
+			},
+			password: {
+				type: Sequelize.STRING,
+				allowNull: false,
+			},
+			is_valid: {
+				type: Sequelize.BOOLEAN,
+				defaultValue: true,
+			},
+			valid_token: {
+				type: Sequelize.STRING,
+			},
+
 			createdAt: {
 				allowNull: false,
 				type: Sequelize.DATE,

@@ -1,0 +1,31 @@
+Voici une liste de user stories complète pour votre application de réservation d'hébergement, en incluant tous les acteurs : utilisateur, propriétaire et administrateur.
+
+**Acteur : Utilisateur (Client)**
+
+1. En tant qu'utilisateur, je veux pouvoir m'inscrire sur la plateforme en fournissant mes informations personnelles.
+2. En tant qu'utilisateur, je veux pouvoir me connecter à mon compte avec mon adresse e-mail et mon mot de passe.
+3. En tant qu'utilisateur, je veux pouvoir rechercher des hébergements dans une ville spécifique pour des dates précises.
+4. En tant qu'utilisateur, je veux pouvoir filtrer les résultats de recherche en fonction de différents critères tels que le prix, les équipements, et la notation.
+5. En tant qu'utilisateur, je veux pouvoir consulter les détails et les photos des hébergements disponibles.
+6. En tant qu'utilisateur, je veux pouvoir consulter les avis et les évaluations d'autres utilisateurs sur les hébergements.
+7. En tant qu'utilisateur, je veux pouvoir réserver un hébergement en spécifiant les dates de séjour et en procédant au paiement.
+8. En tant qu'utilisateur, je veux recevoir une confirmation de ma réservation par e-mail.
+9. En tant qu'utilisateur, je veux pouvoir consulter mes réservations précédentes et futures.
+10. En tant qu'utilisateur, je veux pouvoir contacter le propriétaire de l'hébergement pour poser des questions ou demander des informations supplémentaires.
+
+**Acteur : Propriétaire**
+
+1. En tant que propriétaire, je veux pouvoir m'inscrire sur la plateforme en fournissant les informations de mon établissement.
+2. En tant que propriétaire, je veux pouvoir me connecter à mon compte avec mon adresse e-mail et mon mot de passe.
+3. En tant que propriétaire, je veux pouvoir créer une annonce pour mon établissement en ajoutant des photos, une description et des détails sur les tarifs et les disponibilités.
+4. En tant que propriétaire, je veux pouvoir gérer les réservations de mon établissement, y compris la confirmation, l'annulation et la modification des réservations.
+5. En tant que propriétaire, je veux pouvoir consulter les statistiques de performance de mon annonce, telles que le nombre de vues et de réservations.
+6. En tant que propriétaire, je veux pouvoir contacter les utilisateurs qui ont effectué une réservation dans mon établissement.
+
+**Acteur : Administrateur**
+
+1. En tant qu'administrateur, je veux pouvoir gérer les comptes des utilisateurs et des propriétaires, y compris l'approbation des nouvelles inscriptions.
+2. En tant qu'administrateur, je veux pouvoir supprimer des annonces ou des comptes en cas de non-respect des conditions d'utilisation.
+3. En tant qu'administrateur, je veux pouvoir gérer les paramètres de la plateforme, tels que les politiques de réservation et les informations générales.
+
+Cette liste de user stories couvre les principales fonctionnalités de votre application et les besoins de tous les acteurs impliqués. Vous pouvez les utiliser comme base pour planifier le développement de votre application et prioriser les fonctionnalités à implémenter.

@@ -7,8 +7,9 @@ class UserService {
 	static async getUserById(userId) {
 		return User.findByPk(userId);
 	}
-	static async createUser(lastName, firstName, email) {
-		return User.create({ lastName, firstName, email });
+
+	static async createUser(lastName, firstName, email, password) {
+		return User.create({ lastName, firstName, email, password });
 	}
 
 	static async updateUser(userId, userData) {

@@ -1,6 +1,7 @@
 const UserService = require('../services/UserService');
-const { User } = require('../../models');
+const { User } = require('../../models/index');
 class UserController {
+	//
 	static async getUsers(req, res) {
 		try {
 			const users = await UserService.getAllUsers();
@@ -23,7 +24,7 @@ class UserController {
 		}
 	}
 	static async createUser(req, res) {
-		const { lastName, firstName, email } = req.body;
+		const { lastName, firstName, email, password } = req.body;
 		const verifyUserEmail = await User.findOne({
 			where: {
 				email: email,
@@ -33,7 +34,7 @@ class UserController {
 			return res.status(500).json({ message: "L'email existe deja !!" });
 		}
 		try {
-			await UserService.createUser(lastName, firstName, email);
+			await UserService.createUser(lastName, firstName, email, password);
 
 			res.status(201).json({ message: 'Succes' });
 		} catch (error) {
@@ -52,7 +53,6 @@ class UserController {
 				email,
 			});
 
-			console.log(updatedUser);
 			res.status(201).json(updatedUser);
 		} catch (err) {
 			res.status(500).json({ error: err.message });
